@@ -1,0 +1,57 @@
+let languageContent = {
+    "en": {
+        "contactText":"CONTACT",
+        "PTFText":"Protestant Theological Seminary",
+        "navbarDropdownFakultet":" SEMINARY",
+        "svrhaPostojanjaNav":"MISSION STATEMENT",
+        "retroNavText":"Past & Future",
+        "profesoriTN":"Professors",
+        "studentiTN":"Students",
+        "veroispovedanjeTN":"Statement of Faith",
+        "PRTN":"Recommended Links & Videos",
+        "navbarDropdownStudije":"Studies",
+        "OSTN":"Bachelor's Studies",
+        "MOTN":"Master's Studies",
+        "POTN":"Postgraduate Studies",
+        "navbarDropdownRadoviICasopisi":"Papers & Journal",
+        "ProfeRTN":"Faculty Papers",
+        "SRTN":"Student Papers",
+        "SDTN":"Student Dissertations",
+        "TCTN":"Theological Journal",
+        "navbarDropdownLanguage":"LANGUAGE: ENG",
+        "galerijaTN":"gallery",
+        // "":"",
+        // "":"",
+        // "":"",
+    },
+    "sr": {
+        "contactText":"KONTAKT",
+        "PTFText":"Protestantski Teološki Fakultet",
+        "navbarDropdownFakultet":"FAKULTET",
+        "svrhaPostojanjaNav":"SVRHA POSTOJANJA",
+        "retroNavText":"Retrospektiva & Perspektiva",
+        "profesoriTN":"Profesori",
+        "studentiTN":"Studenti",
+        "veroispovedanjeTN":"Veroispovedanje",
+        "PRTN":"Preporučeni Linkovi & videa",
+        "navbarDropdownStudije":"Studije",
+        "OSTN":"Osnovne Studije",
+        "MOTN":"Master Studije",
+        "POTN":"Postdiplomske Studije",
+        "navbarDropdownRadoviICasopisi":"Radovi & Časopis",
+        "ProfeRTN":"Profesorski Radovi",
+        "SRTN":"Studentski Radovi",
+        "SDTN":"Studentske Disertacije",
+        "TCTN":"Teološki Časopis",
+        "navbarDropdownLanguage":"LANGUAGE: SRB",
+        "galerijaTN":"Galerija",
+        // "":"",
+        // "":"",
+        // "":"",
+    }
+ }
+ function swithcLang(lang) {
+    for (let key in languageContent[lang]) {
+       document.getElementById(key).innerHTML = languageContent[lang][key];
+    }
+ }
